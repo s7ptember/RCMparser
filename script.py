@@ -13,8 +13,8 @@ def send_message(message):
     bot.send_message(chat_id=CHAT_ID, text=message)
 
 def monitor():
-    cpu_percent = psutil.cpu_percent()
     ram_percent = psutil.virtual_memory().percent
+    cpu_percent = psutil.cpu_percent()
     memory_percent = psutil.disk_usage('/').percent
 
     if ram_percent > RAM_THRESHOLD:
