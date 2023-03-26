@@ -25,7 +25,7 @@ def monitor():
         message = f'🔴 WARNING! CPU usage is overload on {cpu_percent}%.'
         send_message(message)
 
-    if memory_percent > DISK_THRESHOLD:
+    if memory_percent > MEMORY_THRESHOLD:
         message = f'🔴 WARNING! memory usage is overload on {memory_percent}%.'
         send_message(message)
 
